@@ -1,0 +1,1354 @@
+Microchip MPLAB XC8 Compiler V2.20
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files\Microchip\xc8\v2.20\pic\dat\en_msgs.txt -cn \
+  -h+dist/default/production\EWH.X.production.sym \
+  --cmf=dist/default/production\EWH.X.production.cmf -z -Q16F877A \
+  -oC:\Users\Hp\AppData\Local\Temp\s6mk.2 --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/production/EWH.X.production.map -E1 -ver=XC8 Compiler \
+  --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK -ACODE=00h-07FFhx4 \
+  -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
+  -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
+  -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh -ABANK3=0190h-01EFh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh -ASFR0=00h-01Fh \
+  -ASFR1=080h-09Fh -ASFR2=0100h-010Fh -ASFR3=0180h-018Fh \
+  -ACONFIG=02007h-02007h -DCONFIG=2 -AIDLOC=02000h-02003h -DIDLOC=2 \
+  -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
+  -pfunctab=ENTRY -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 \
+  -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  C:\Users\Hp\AppData\Local\Temp\s6mk.o \
+  dist/default/production\EWH.X.production.o 
+
+Object code version is 3.11
+
+Machine type is 16F877A
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\Hp\AppData\Local\Temp\s6mk.o
+                end_init                              C        C        3        8       0
+                reset_vec                             0        0        3        0       0
+                config                             2007     2007        1        0       4
+dist/default/production\EWH.X.production.o
+                cinit                                 F        F       30        8       0
+                intentry                              4        4        8        8       0
+                config                             2007     2007        1        0       4
+                text22                              80D      80D       1E     101A       0
+                text21                             17DB     17DB        9     2FB6       0
+                text20                              802      802        B     1004       0
+                text19                             17E4     17E4       1C     2FC8       0
+                text18                              82B      82B       26     1056       0
+                text17                              A40      A40       7F     1480       0
+                text16                              7DB      7DB       24        8       0
+                text15                              96B      96B       59     12D6       0
+                text14                              72B      72B       B0        8       0
+                text13                              91D      91D       4E     123A       0
+                text12                              ABF      ABF       84     157E       0
+                text11                              B43      B43       84     1686       0
+                text10                              BC7      BC7       85     178E       0
+                text9                               C4C      C4C      1D7     1898       0
+                text8                               8A4      8A4       2D     1148       0
+                text7                               87A      87A       2A     10F4       0
+                text6                               E23      E23      1DD     1C46       0
+                text5                               851      851       29     10A2       0
+                text4                                3F       3F      361        8       0
+                text3                               9C4      9C4       7C     1388       0
+                text2                               66F      66F       BC        8       0
+                text1                               3A0      3A0      2CF        8       0
+                maintext                            8D1      8D1       4C     11A2       0
+                cstackBANK0                          20       20       47       20       1
+                cstackCOMMON                         70       70        A       70       1
+                dataBANK1                            A5       A5        4       A0       1
+                bssBANK1                             A0       A0        5       A0       1
+                bssBANK0                             67       67        9       20       1
+                bssCOMMON                            7A       7A        2       70       1
+                idataBANK1                         17D7     17D7        4     2FAE       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                end_init                              C        C        3         0
+                cinit                                 F        F       30         0
+                intentry                              4        4        8         0
+                reset_vec                             0        0        3         0
+                text22                              80D      80D       1E         0
+                text21                             17DB     17DB        9         0
+                text20                              802      802        B         0
+                text19                             17E4     17E4       1C         0
+                text18                              82B      82B       26         0
+                text17                              A40      A40       7F         0
+                text16                              7DB      7DB       24         0
+                text15                              96B      96B       59         0
+                text14                              72B      72B       B0         0
+                text13                              91D      91D       4E         0
+                text12                              ABF      ABF       84         0
+                text11                              B43      B43       84         0
+                text10                              BC7      BC7       85         0
+                text9                               C4C      C4C      1D7         0
+                text8                               8A4      8A4       2D         0
+                text7                               87A      87A       2A         0
+                text6                               E23      E23      1DD         0
+                text5                               851      851       29         0
+                text4                                3F       3F      361         0
+                text3                               9C4      9C4       7C         0
+                text2                               66F      66F       BC         0
+                text1                               3A0      3A0      2CF         0
+                maintext                            8D1      8D1       4C         0
+                idataBANK1                         17D7     17D7        4         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        A         1
+                bssCOMMON                            7A       7A        2         1
+
+        CLASS   BANK0          
+                cstackBANK0                          20       20       47         1
+                bssBANK0                             67       67        9         1
+
+        CLASS   BANK1          
+                dataBANK1                            A5       A5        4         1
+                bssBANK1                             A0       A0        5         1
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+                config                             2007     2007        1         4
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000003  000003         0       0  CODE        2
+                intentry                       000004  0007FB  0007FF         8       0  CODE        2
+                cstackBANK0                    000020  000050  000070        20       1  BANK0       1
+                cstackCOMMON                   000070  00000C  00007C        70       1  COMMON      1
+                bssBANK1                       0000A0  000009  0000A9        A0       1  BANK1       1
+                text20                         000802  00000B  00080D      1004       0  CODE        2
+                text22                         00080D  00001E  00082B      101A       0  CODE        2
+                text18                         00082B  000026  000851      1056       0  CODE        2
+                text5                          000851  000029  00087A      10A2       0  CODE        2
+                text7                          00087A  00002A  0008A4      10F4       0  CODE        2
+                text8                          0008A4  00002D  0008D1      1148       0  CODE        2
+                maintext                       0008D1  00004C  00091D      11A2       0  CODE        2
+                text13                         00091D  00004E  00096B      123A       0  CODE        2
+                text15                         00096B  000059  0009C4      12D6       0  CODE        2
+                text3                          0009C4  00007C  000A40      1388       0  CODE        2
+                text17                         000A40  00007F  000ABF      1480       0  CODE        2
+                text12                         000ABF  000084  000B43      157E       0  CODE        2
+                text11                         000B43  000084  000BC7      1686       0  CODE        2
+                text10                         000BC7  000085  000C4C      178E       0  CODE        2
+                text9                          000C4C  0001D7  000E23      1898       0  CODE        2
+                text6                          000E23  0001DD  001000      1C46       0  CODE        2
+                idataBANK1                     0017D7  000004  0017DB      2FAE       0  CODE        2
+                text21                         0017DB  000009  0017E4      2FB6       0  CODE        2
+                text19                         0017E4  00001C  001800      2FC8       0  CODE        2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK1            00A9-00EF             47           1
+        BANK2            0110-016F             60           1
+        BANK3            0190-01EF             60           1
+        CODE             0003-0003              1           2
+                         07FF-0801              1
+                         1000-17D6            7D7
+                         1800-1FFF            800
+        COMMON           007C-007D              2           1
+        CONST            0003-0003              1           2
+                         07FF-0801              1
+                         1000-17D6            100
+                         1800-1FFF            100
+        EEDATA           2100-21FF            100           2
+        ENTRY            0003-0003              1           2
+                         07FF-0801              1
+                         1000-17D6            100
+                         1800-1FFF            100
+        IDLOC            2000-2003              4           2
+        RAM              00A9-00EF             47           1
+                         0110-016F             60
+                         0190-01EF             60
+        SFR0             0000-001F             20           1
+        SFR1             0080-009F             20           1
+        SFR2             0100-010F             10           1
+        SFR3             0180-018F             10           1
+        STACK            0110-016F             60           1
+        STRCODE          0003-0003              1           2
+                         07FF-0801              3
+                         1000-17D6            7D7
+                         1800-1FFF            800
+        STRING           0003-0003              1           2
+                         07FF-0801              1
+                         1000-17D6            100
+                         1800-1FFF            100
+
+                                  Symbol Table
+
+?_ADC_Reead                 cstackCOMMON 0072
+?__Umul8_16                 cstackCOMMON 0072
+?___fldiv                   cstackBANK0  0040
+?___flmul                   cstackBANK0  0026
+?___fltol                   cstackBANK0  005A
+?___xxtofl                  cstackCOMMON 0072
+ADC_Reead@Channel           cstackCOMMON 0075
+CTR_Init@x                  cstackCOMMON 0076
+CTR_Update@condition        cstackCOMMON 0076
+DISP_Setdisplay1@Temprature cstackCOMMON 0077
+DISP_Setdisplay1@display1   cstackCOMMON 0078
+DISP_Setdisplay2@Temprature cstackCOMMON 0077
+DISP_Setdisplay2@display2   cstackCOMMON 0078
+DISP_Update@state           cstackBANK0  0023
+DISP_Update@tmp             cstackBANK0  0024
+EepromRead@AddHigh          cstackCOMMON 0072
+EepromRead@AddLow           cstackCOMMON 0073
+EepromRead@Slaveadd         cstackCOMMON 0075
+EepromRead@TempData         cstackCOMMON 0074
+EepromWrite@AddHigh         cstackCOMMON 0072
+EepromWrite@AddLow          cstackCOMMON 0073
+EepromWrite@EeData          cstackCOMMON 0074
+EepromWrite@Slaveadd        cstackCOMMON 0075
+HELED_Update@status         cstackCOMMON 0072
+SSD_SetSymbol@Number        cstackCOMMON 0074
+SW_Update@h                 cstackBANK0  0029
+SW_Update@o                 cstackBANK0  002B
+SW_Update@u                 cstackBANK0  002A
+SW_Update@x                 cstackBANK0  002C
+_ACKEN                      (abs)        048C
+_ADCON0                     (abs)        001F
+_ADCON1                     (abs)        009F
+_ADC_Reead                  text19       17E4
+_ADC_iinit                  text21       17DB
+_ADRESH                     (abs)        001E
+_ADRESL                     (abs)        009E
+_CTR_Init                   text16       07DB
+_CTR_Update                 text14       072B
+_DISP_Setdisplay1           text12       0ABF
+_DISP_Setdisplay2           text11       0B43
+_DISP_Update                text10       0BC7
+_EepromRead                 text17       0A40
+_EepromWrite                text15       096B
+_GO_DONE                    (abs)        00FA
+_HELED_Update               text18       082B
+_INTCON                     (abs)        000B
+_INTF                       (abs)        0059
+_OPTION_REG                 (abs)        0081
+_PEN                        (abs)        048A
+_PIR1bits                   (abs)        000C
+_PORTA                      (abs)        0005
+_PORTB                      (abs)        0006
+_PORTC                      (abs)        0007
+_PORTD                      (abs)        0008
+_RA4                        (abs)        002C
+_RA5                        (abs)        002D
+_RB1                        (abs)        0031
+_RB2                        (abs)        0032
+_RSEN                       (abs)        0489
+_ReadData                   bssBANK0     006D
+_SEN                        (abs)        0488
+_SSD_Off                    text20       0802
+_SSD_SetSymbol              text13       091D
+_SSPADD                     (abs)        0093
+_SSPBUF                     (abs)        0013
+_SSPCON                     (abs)        0014
+_SSPCON2bits                (abs)        0091
+_SSPIF                      (abs)        0063
+_SSPSTATbits                (abs)        0094
+_SW_GetState                text8        08A4
+_SW_Update                  text9        0C4C
+_TRISA                      (abs)        0085
+_TRISB                      (abs)        0086
+_TRISC                      (abs)        0087
+_TRISD                      (abs)        0088
+_Temp_Reading               text7        087A
+__Habs1                     abs1         0000
+__Hbank0                    bank0        0000
+__Hbank1                    bank1        0000
+__Hbank2                    bank2        0000
+__Hbank3                    bank3        0000
+__HbssBANK0                 bssBANK0     0000
+__HbssBANK1                 bssBANK1     0000
+__HbssCOMMON                bssCOMMON    0000
+__Hcinit                    cinit        003F
+__Hclrtext                  clrtext      0000
+__Hcode                     code         0000
+__Hcommon                   common       0000
+__Hconfig                   config       2008
+__HcstackBANK0              cstackBANK0  0000
+__HcstackCOMMON             cstackCOMMON 0000
+__HdataBANK1                dataBANK1    0000
+__Heeprom_data              eeprom_data  0000
+__Hend_init                 end_init     000F
+__Hfunctab                  functab      0000
+__HidataBANK1               idataBANK1   0000
+__Hinit                     init         000C
+__Hintentry                 intentry     000C
+__Hmaintext                 maintext     0000
+__Hpowerup                  powerup      0000
+__Hram                      ram          0000
+__Hreset_vec                reset_vec    0003
+__Hsfr0                     sfr0         0000
+__Hsfr1                     sfr1         0000
+__Hsfr2                     sfr2         0000
+__Hsfr3                     sfr3         0000
+__Hspace_0                  (abs)        1800
+__Hspace_1                  (abs)        00A9
+__Hspace_2                  (abs)        0000
+__Hspace_3                  (abs)        0000
+__Hspace_4                  (abs)        400F
+__Hstack                    stack        0000
+__Hstrings                  strings      0000
+__Htext                     text         0000
+__Labs1                     abs1         0000
+__Lbank0                    bank0        0000
+__Lbank1                    bank1        0000
+__Lbank2                    bank2        0000
+__Lbank3                    bank3        0000
+__LbssBANK0                 bssBANK0     0000
+__LbssBANK1                 bssBANK1     0000
+__LbssCOMMON                bssCOMMON    0000
+__Lcinit                    cinit        000F
+__Lclrtext                  clrtext      0000
+__Lcode                     code         0000
+__Lcommon                   common       0000
+__Lconfig                   config       0000
+__LcstackBANK0              cstackBANK0  0000
+__LcstackCOMMON             cstackCOMMON 0000
+__LdataBANK1                dataBANK1    0000
+__Leeprom_data              eeprom_data  0000
+__Lend_init                 end_init     000C
+__Lfunctab                  functab      0000
+__LidataBANK1               idataBANK1   0000
+__Linit                     init         000C
+__Lintentry                 intentry     0004
+__Lmaintext                 maintext     0000
+__Lpowerup                  powerup      0000
+__Lram                      ram          0000
+__Lreset_vec                reset_vec    0000
+__Lsfr0                     sfr0         0000
+__Lsfr1                     sfr1         0000
+__Lsfr2                     sfr2         0000
+__Lsfr3                     sfr3         0000
+__Lspace_0                  (abs)        0000
+__Lspace_1                  (abs)        0000
+__Lspace_2                  (abs)        0000
+__Lspace_3                  (abs)        0000
+__Lspace_4                  (abs)        0000
+__Lstack                    stack        0000
+__Lstrings                  strings      0000
+__Ltext                     text         0000
+__S0                        (abs)        1800
+__S1                        (abs)        00A9
+__S2                        (abs)        0000
+__S3                        (abs)        0000
+__Umul8_16                  text5        0851
+__Umul8_16@multiplicand     cstackCOMMON 0072
+__Umul8_16@multiplier       cstackBANK0  0024
+__Umul8_16@product          cstackBANK0  0020
+__Umul8_16@word_mpld        cstackBANK0  0022
+___fldiv                    text6        0E23
+___fldiv@a                  cstackBANK0  0040
+___fldiv@aexp               cstackBANK0  0059
+___fldiv@b                  cstackBANK0  0044
+___fldiv@bexp               cstackBANK0  0058
+___fldiv@grs                cstackBANK0  0054
+___fldiv@new_exp            cstackBANK0  0052
+___fldiv@rem                cstackBANK0  004D
+___fldiv@sign               cstackBANK0  0051
+___flmul                    text4        003F
+___flmul@a                  cstackBANK0  002A
+___flmul@aexp               cstackBANK0  0034
+___flmul@b                  cstackBANK0  0026
+___flmul@bexp               cstackBANK0  0039
+___flmul@grs                cstackBANK0  0035
+___flmul@prod               cstackBANK0  003A
+___flmul@sign               cstackBANK0  0033
+___flmul@temp               cstackBANK0  003E
+___fltol                    text3        09C4
+___fltol@exp1               cstackBANK0  0063
+___fltol@f1                 cstackBANK0  005A
+___fltol@sign1              cstackBANK0  0062
+___int_sp                   stack        0000
+___latbits                  (abs)        0002
+___sp                       stack        0000
+___stackhi                  (abs)        0000
+___stacklo                  (abs)        0000
+___xxtofl                   text2        066F
+___xxtofl@arg               cstackBANK0  0022
+___xxtofl@exp               cstackBANK0  0021
+___xxtofl@sign              cstackBANK0  0020
+___xxtofl@val               cstackCOMMON 0072
+__end_of_ADC_Reead          text19       1800
+__end_of_ADC_iinit          text21       17E4
+__end_of_CTR_Init           text16       07FF
+__end_of_CTR_Update         text14       07DB
+__end_of_DISP_Setdisplay1   text12       0B43
+__end_of_DISP_Setdisplay2   text11       0BC7
+__end_of_DISP_Update        text10       0C4C
+__end_of_EepromRead         text17       0ABF
+__end_of_EepromWrite        text15       09C4
+__end_of_HELED_Update       text18       0851
+__end_of_SSD_Off            text20       080D
+__end_of_SSD_SetSymbol      text13       096B
+__end_of_SW_GetState        text8        08D1
+__end_of_SW_Update          text9        0E23
+__end_of_Temp_Reading       text7        08A4
+__end_of__Umul8_16          text5        087A
+__end_of___fldiv            text6        1000
+__end_of___flmul            text4        03A0
+__end_of___fltol            text3        0A40
+__end_of___xxtofl           text2        072B
+__end_of__initialization    cinit        003B
+__end_of_main               maintext     091D
+__end_of_my_isr_routine     text22       082B
+__end_of_temp_Update        text1        066F
+__initialization            cinit        000F
+__pbssBANK0                 bssBANK0     0067
+__pbssBANK1                 bssBANK1     00A0
+__pbssCOMMON                bssCOMMON    007A
+__pcstackBANK0              cstackBANK0  0020
+__pcstackCOMMON             cstackCOMMON 0070
+__pdataBANK1                dataBANK1    00A5
+__pidataBANK1               idataBANK1   17D7
+__pintentry                 intentry     0004
+__pmaintext                 maintext     08D1
+__ptext1                    text1        03A0
+__ptext10                   text10       0BC7
+__ptext11                   text11       0B43
+__ptext12                   text12       0ABF
+__ptext13                   text13       091D
+__ptext14                   text14       072B
+__ptext15                   text15       096B
+__ptext16                   text16       07DB
+__ptext17                   text17       0A40
+__ptext18                   text18       082B
+__ptext19                   text19       17E4
+__ptext2                    text2        066F
+__ptext20                   text20       0802
+__ptext21                   text21       17DB
+__ptext22                   text22       080D
+__ptext3                    text3        09C4
+__ptext4                    text4        003F
+__ptext5                    text5        0851
+__ptext6                    text6        0E23
+__ptext7                    text7        087A
+__ptext8                    text8        08A4
+__ptext9                    text9        0C4C
+__size_of_ADC_Reead         (abs)        0000
+__size_of_ADC_iinit         (abs)        0000
+__size_of_CTR_Init          (abs)        0000
+__size_of_CTR_Update        (abs)        0000
+__size_of_DISP_Setdisplay1  (abs)        0000
+__size_of_DISP_Setdisplay2  (abs)        0000
+__size_of_DISP_Update       (abs)        0000
+__size_of_EepromRead        (abs)        0000
+__size_of_EepromWrite       (abs)        0000
+__size_of_HELED_Update      (abs)        0000
+__size_of_SSD_Off           (abs)        0000
+__size_of_SSD_SetSymbol     (abs)        0000
+__size_of_SW_GetState       (abs)        0000
+__size_of_SW_Update         (abs)        0000
+__size_of_Temp_Reading      (abs)        0000
+__size_of__Umul8_16         (abs)        0000
+__size_of___fldiv           (abs)        0000
+__size_of___flmul           (abs)        0000
+__size_of___fltol           (abs)        0000
+__size_of___xxtofl          (abs)        0000
+__size_of_main              (abs)        0000
+__size_of_my_isr_routine    (abs)        0000
+__size_of_temp_Update       (abs)        0000
+_b                          bssBANK0     006C
+_c                          bssBANK1     00A4
+_g_Interrupt_Flag           bssBANK0     006F
+_m                          bssBANK0     006B
+_main                       maintext     08D1
+_my_isr_routine             text22       080D
+_temp                       bssBANK0     0069
+_temp_Update                text1        03A0
+_tmp                        bssCOMMON    007B
+_x                          bssCOMMON    007A
+_y                          bssBANK0     0067
+_z                          bssBANK0     006E
+btemp                       (abs)        007E
+end_of_initialization       cinit        003B
+interrupt_function          intentry     0004
+intlevel0                   functab      0000
+intlevel1                   functab      0000
+intlevel2                   functab      0000
+intlevel3                   functab      0000
+intlevel4                   functab      0000
+intlevel5                   functab      0000
+reset_vec                   reset_vec    0000
+saved_w                     (abs)        007E
+start                       init         000C
+start_initialization        cinit        000F
+wtemp0                      (abs)        007E
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 42 in file "XC.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  x               1    0        unsigned char 
+ Return value:  Size  Location     Type
+                  2  167[None  ] int 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       1       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       1       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels required when called:    7
+ This function calls:
+		_ADC_iinit
+		_SSD_Off
+		_temp_Update
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _temp_Update *****************
+ Defined at:
+		line 55 in file "AdjTemperature.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       3       0       0       0
+      Totals:         0       3       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_ADC_Reead
+		_HELED_Update
+		_SW_GetState
+		_Temp_Reading
+		___fldiv
+		___flmul
+		___fltol
+		___xxtofl
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function ___xxtofl *****************
+ Defined at:
+		line 10 in file "C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\xxtofl.c"
+ Parameters:    Size  Location     Type
+  sign            1    wreg     unsigned char 
+  val             4    2[COMMON] long 
+ Auto vars:     Size  Location     Type
+  sign            1    0[BANK0 ] unsigned char 
+  arg             4    2[BANK0 ] unsigned long 
+  exp             1    1[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  4    2[COMMON] unsigned char 
+ Registers used:
+		wreg, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         4       0       0       0       0
+      Locals:         0       6       0       0       0
+      Temps:          4       0       0       0       0
+      Totals:         8       6       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_temp_Update
+ This function uses a non-reentrant model
+
+
+ *************** function ___fltol *****************
+ Defined at:
+		line 43 in file "C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fltol.c"
+ Parameters:    Size  Location     Type
+  f1              4   58[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  exp1            1   67[BANK0 ] unsigned char 
+  sign1           1   66[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  4   58[BANK0 ] long 
+ Registers used:
+		wreg, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       4       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       4       0       0       0
+      Totals:         0      10       0       0       0
+Total ram usage:       10 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_temp_Update
+ This function uses a non-reentrant model
+
+
+ *************** function ___flmul *****************
+ Defined at:
+		line 8 in file "C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcmul.c"
+ Parameters:    Size  Location     Type
+  b               4    6[BANK0 ] long 
+  a               4   10[BANK0 ] long 
+ Auto vars:     Size  Location     Type
+  prod            4   26[BANK0 ] struct .
+  grs             4   21[BANK0 ] unsigned long 
+  temp            2   30[BANK0 ] struct .
+  bexp            1   25[BANK0 ] unsigned char 
+  aexp            1   20[BANK0 ] unsigned char 
+  sign            1   19[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  4    6[BANK0 ] unsigned char 
+ Registers used:
+		wreg, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       8       0       0       0
+      Locals:         0      13       0       0       0
+      Temps:          0       5       0       0       0
+      Totals:         0      26       0       0       0
+Total ram usage:       26 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		__Umul8_16
+ This function is called by:
+		_temp_Update
+ This function uses a non-reentrant model
+
+
+ *************** function __Umul8_16 *****************
+ Defined at:
+		line 4 in file "C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c"
+ Parameters:    Size  Location     Type
+  multiplier      1    wreg     unsigned char 
+  multiplicand    1    2[COMMON] unsigned char 
+ Auto vars:     Size  Location     Type
+  multiplier      1    4[BANK0 ] unsigned char 
+  word_mpld       2    2[BANK0 ] unsigned int 
+  product         2    0[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2    2[COMMON] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         2       0       0       0       0
+      Locals:         0       5       0       0       0
+      Temps:          2       0       0       0       0
+      Totals:         4       5       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		___flmul
+ This function uses a non-reentrant model
+
+
+ *************** function ___fldiv *****************
+ Defined at:
+		line 8 in file "C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcdiv.c"
+ Parameters:    Size  Location     Type
+  a               4   32[BANK0 ] unsigned int 
+  b               4   36[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  grs             4   52[BANK0 ] unsigned long 
+  rem             4   45[BANK0 ] unsigned long 
+  new_exp         2   50[BANK0 ] int 
+  aexp            1   57[BANK0 ] unsigned char 
+  bexp            1   56[BANK0 ] unsigned char 
+  sign            1   49[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  4   32[BANK0 ] unsigned char 
+ Registers used:
+		wreg, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       8       0       0       0
+      Locals:         0      13       0       0       0
+      Temps:          0       5       0       0       0
+      Totals:         0      26       0       0       0
+Total ram usage:       26 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_temp_Update
+ This function uses a non-reentrant model
+
+
+ *************** function _Temp_Reading *****************
+ Defined at:
+		line 47 in file "AdjTemperature.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_DISP_Setdisplay1
+		_DISP_Setdisplay2
+		_DISP_Update
+		_EepromRead
+ This function is called by:
+		_temp_Update
+ This function uses a non-reentrant model
+
+
+ *************** function _SW_GetState *****************
+ Defined at:
+		line 190 in file "SW.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       3       0       0       0
+      Totals:         0       3       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_CTR_Init
+		_SW_Update
+ This function is called by:
+		_temp_Update
+ This function uses a non-reentrant model
+
+
+ *************** function _SW_Update *****************
+ Defined at:
+		line 35 in file "SW.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  x               1   12[BANK0 ] unsigned char 
+  o               1   11[BANK0 ] unsigned char 
+  u               1   10[BANK0 ] unsigned char 
+  h               1    9[BANK0 ] unsigned char 
+  tmp             1    0        unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       5       0       0       0
+      Temps:          0       3       0       0       0
+      Totals:         0       8       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_CTR_Update
+		_DISP_Update
+		_EepromRead
+ This function is called by:
+		_SW_GetState
+ This function uses a non-reentrant model
+
+
+ *************** function _DISP_Update *****************
+ Defined at:
+		line 127 in file "Display.c"
+ Parameters:    Size  Location     Type
+  state           1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  state           1    3[BANK0 ] unsigned char 
+  tmp             1    4[BANK0 ] unsigned char 
+  x               1    0        unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       3       0       0       0
+      Temps:          0       2       0       0       0
+      Totals:         0       5       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_DISP_Setdisplay1
+		_DISP_Setdisplay2
+		_EepromRead
+ This function is called by:
+		_Temp_Reading
+		_SW_Update
+ This function uses a non-reentrant model
+
+
+ *************** function _DISP_Setdisplay2 *****************
+ Defined at:
+		line 72 in file "Display.c"
+ Parameters:    Size  Location     Type
+  Temprature      1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Temprature      1    7[COMMON] unsigned char 
+  display2        1    8[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         2       0       0       0       0
+      Temps:          2       0       0       0       0
+      Totals:         4       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_SSD_SetSymbol
+ This function is called by:
+		_DISP_Update
+		_Temp_Reading
+ This function uses a non-reentrant model
+
+
+ *************** function _DISP_Setdisplay1 *****************
+ Defined at:
+		line 18 in file "Display.c"
+ Parameters:    Size  Location     Type
+  Temprature      1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Temprature      1    7[COMMON] unsigned char 
+  display1        1    8[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         2       0       0       0       0
+      Temps:          2       0       0       0       0
+      Totals:         4       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_SSD_SetSymbol
+ This function is called by:
+		_DISP_Update
+		_Temp_Reading
+ This function uses a non-reentrant model
+
+
+ *************** function _SSD_SetSymbol *****************
+ Defined at:
+		line 21 in file "SSD.c"
+ Parameters:    Size  Location     Type
+  Number          1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Number          1    4[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         1       0       0       0       0
+      Temps:          2       0       0       0       0
+      Totals:         3       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_DISP_Setdisplay1
+		_DISP_Setdisplay2
+ This function uses a non-reentrant model
+
+
+ *************** function _CTR_Update *****************
+ Defined at:
+		line 37 in file "CTR.c"
+ Parameters:    Size  Location     Type
+  condition       1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  condition       1    6[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         1       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         1       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_EepromRead
+		_EepromWrite
+ This function is called by:
+		_SW_Update
+ This function uses a non-reentrant model
+
+
+ *************** function _EepromWrite *****************
+ Defined at:
+		line 14 in file "exe2prom.c"
+ Parameters:    Size  Location     Type
+  Slaveadd        1    wreg     unsigned char 
+  AddHigh         1    2[COMMON] unsigned char 
+  AddLow          1    3[COMMON] unsigned char 
+  EeData          1    4[COMMON] unsigned char 
+ Auto vars:     Size  Location     Type
+  Slaveadd        1    5[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         3       0       0       0       0
+      Locals:         1       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         4       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_CTR_Update
+ This function uses a non-reentrant model
+
+
+ *************** function _CTR_Init *****************
+ Defined at:
+		line 23 in file "CTR.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  x               1    6[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         1       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         1       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_EepromRead
+ This function is called by:
+		_SW_GetState
+ This function uses a non-reentrant model
+
+
+ *************** function _EepromRead *****************
+ Defined at:
+		line 55 in file "exe2prom.c"
+ Parameters:    Size  Location     Type
+  Slaveadd        1    wreg     unsigned char 
+  AddHigh         1    2[COMMON] unsigned char 
+  AddLow          1    3[COMMON] unsigned char 
+ Auto vars:     Size  Location     Type
+  Slaveadd        1    5[COMMON] unsigned char 
+  TempData        1    4[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         2       0       0       0       0
+      Locals:         2       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         4       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_DISP_Update
+		_CTR_Init
+		_CTR_Update
+		_Temp_Reading
+		_SW_Update
+		_Temp_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _HELED_Update *****************
+ Defined at:
+		line 18 in file "HELLED.c"
+ Parameters:    Size  Location     Type
+  status          1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  status          1    2[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         1       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         1       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_temp_Update
+ This function uses a non-reentrant model
+
+
+ *************** function _ADC_Reead *****************
+ Defined at:
+		line 19 in file "adc.c"
+ Parameters:    Size  Location     Type
+  Channel         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Channel         1    5[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  2    2[COMMON] int 
+ Registers used:
+		wreg, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         2       0       0       0       0
+      Locals:         1       0       0       0       0
+      Temps:          1       0       0       0       0
+      Totals:         4       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_temp_Update
+ This function uses a non-reentrant model
+
+
+ *************** function _SSD_Off *****************
+ Defined at:
+		line 61 in file "SSD.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ADC_iinit *****************
+ Defined at:
+		line 14 in file "adc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _my_isr_routine *****************
+ Defined at:
+		line 25 in file "XC.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          2       0       0       0       0
+      Totals:         2       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		Interrupt level 1
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+SW.c
+		_SW_GetState   		CODE           	08A4	0000	46
+		_SW_Update     		CODE           	0C4C	0000	472
+
+SW.c estimated size: 518
+
+HELLED.c
+		_HELED_Update  		CODE           	082B	0000	39
+
+HELLED.c estimated size: 39
+
+SSD.c
+		_SSD_Off       		CODE           	0802	0000	12
+		_SSD_SetSymbol 		CODE           	091D	0000	79
+
+SSD.c estimated size: 91
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+		__Umul8_16     		CODE           	0851	0000	42
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c estimated size: 42
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\xxtofl.c
+		___xxtofl      		CODE           	066F	0000	189
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\xxtofl.c estimated size: 189
+
+AdjTemperature.c
+		_temp_Update   		CODE           	03A0	0000	720
+		_Temp_Reading  		CODE           	087A	0000	43
+
+AdjTemperature.c estimated size: 763
+
+adc.c
+		_ADC_iinit     		CODE           	17DB	0000	10
+		_ADC_Reead     		CODE           	17E4	0000	29
+
+adc.c estimated size: 39
+
+XC.c
+		_main          		CODE           	08D1	0000	77
+		_my_isr_routine		CODE           	080D	0000	31
+
+XC.c estimated size: 108
+
+shared
+		__initialization		CODE           	000F	0000	45
+
+shared estimated size: 45
+
+exe2prom.c
+		_EepromWrite   		CODE           	096B	0000	90
+		_EepromRead    		CODE           	0A40	0000	128
+
+exe2prom.c estimated size: 218
+
+Display.c
+		_DISP_Setdisplay1		CODE           	0ABF	0000	133
+		_DISP_Setdisplay2		CODE           	0B43	0000	133
+		_DISP_Update   		CODE           	0BC7	0000	134
+
+Display.c estimated size: 400
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fltol.c
+		___fltol       		CODE           	09C4	0000	125
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fltol.c estimated size: 125
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcmul.c
+		___flmul       		CODE           	003F	0000	866
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcmul.c estimated size: 866
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcdiv.c
+		___fldiv       		CODE           	0E23	0000	478
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcdiv.c estimated size: 478
+
+CTR.c
+		_CTR_Update    		CODE           	072B	0000	177
+		_CTR_Init      		CODE           	07DB	0000	37
+
+CTR.c estimated size: 214
+
