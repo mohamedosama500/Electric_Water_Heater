@@ -32,20 +32,20 @@
                 while(PEN);//wait for start condition to complete
                 return;//exit write (no acknowledge)
             }
-            SSPBUF = AddLow;
-            while(!SSPIF);
-            PIR1bits.SSPIF=0;
+            SSPBUF = AddLow;//send EEPROM Adress low
+            while(!SSPIF);//wait for acknowledge.SSPIF bit is set every 9th clock cycle
+            PIR1bits.SSPIF=0;//clear SSP interrupt flag
             if(SSPCON2bits.ACKSTAT){
-                SSPCON2bits.PEN=1;
-                while(PEN);
-                return;
+                SSPCON2bits.PEN=1;//initiate stop condition 
+                while(PEN);//wait for start condition to complete
+                return;//exit write (no acknowledge)
             }
-            SSPBUF = EeData;
-            while(!SSPIF);
-            PIR1bits.SSPIF=0;
+            SSPBUF = EeData;//send the data byte
+            while(!SSPIF);//wait for acknowledge.SSPIF bit is set every 9th clock cycle
+            PIR1bits.SSPIF=0;//clear SSP interrupt flag
             
-             SSPCON2bits.PEN=1;
-             while(PEN);
+             SSPCON2bits.PEN=1;//initiate stop condition (Ack or Nack)
+             while(PEN);//wait for start condition to complete
                 
             
             
