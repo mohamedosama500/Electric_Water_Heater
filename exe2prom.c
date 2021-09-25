@@ -53,36 +53,36 @@
         
         
     char EepromRead(char Slaveadd ,char AddHigh,char AddLow){
-        char TempData;
+        char TempData;//Temporary holder for data byte
         
         
-        SSPCON2bits.SEN=1;
-            while(SEN);
-            PIR1bits.SSPIF=0;
-            SSPBUF=Slaveadd;
-             while(!SSPIF);
-             PIR1bits.SSPIF=0;
+        SSPCON2bits.SEN=1;//initiate start condition
+            while(SEN);//wait for start condition to complete
+            PIR1bits.SSPIF=0;//clear SSP interrupt flag
+            SSPBUF=Slaveadd;//send the slave address and R/W bit
+             while(!SSPIF);//wait for acknowledge.SSPIF bit is set every 9th clock cycle
+             PIR1bits.SSPIF=0;//clear SSP interrupt flag
             if(SSPCON2bits.ACKSTAT){
-                SSPCON2bits.PEN=1;
-                while(PEN);
-                return(0xFF);
+                SSPCON2bits.PEN=1;//initiate stop condition
+                while(PEN);//wait for start condition to complete
+                return(0xFF);//Exit read (no acknowledge)
             }
-            SSPBUF = AddHigh;
-            while(!SSPIF);
-            PIR1bits.SSPIF=0;
+            SSPBUF = AddHigh;//send EEPROM address high
+            while(!SSPIF);//wait for acknowledge.SSPIF bit is set every 9th clock cycle
+            PIR1bits.SSPIF=0;//clear SSP interrupt flag
             if(SSPCON2bits.ACKSTAT){
-                SSPCON2bits.PEN=1;
-                while(PEN);
-                return(0xFF);
+                SSPCON2bits.PEN=1;//initiate stop condition
+                while(PEN);//wait for start condition to complete
+                return(0xFF);//Exit read (no acknowledge)
             }
             
-            SSPBUF = AddLow;
-            while(!SSPIF);
-            PIR1bits.SSPIF=0;
+            SSPBUF = AddLow;//send EEPROM address low
+            while(!SSPIF);//wait for acknowledge.SSPIF bit is set every 9th clock cycle
+            PIR1bits.SSPIF=0;//clear SSP interrupt flag
             if(SSPCON2bits.ACKSTAT){
-                SSPCON2bits.PEN=1;
-                while(PEN);
-                return(0xFF);
+                SSPCON2bits.PEN=1;//initiate stop condition
+                while(PEN);//wait for start condition to complete
+                return(0xFF);//Exit read (no acknowledge)
             }
             
             SSPCON2bits.RSEN=1;
