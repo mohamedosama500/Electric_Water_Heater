@@ -85,26 +85,26 @@
                 return(0xFF);//Exit read (no acknowledge)
             }
             
-            SSPCON2bits.RSEN=1;
-            while(RSEN);
-            PIR1bits.SSPIF=0;
-            SSPBUF=(Slaveadd+1);
-            while(!SSPIF);
-            PIR1bits.SSPIF=0;
+            SSPCON2bits.RSEN=1;//initiate restart condition
+            while(RSEN);//wait for restart condition to start
+            PIR1bits.SSPIF=0;//clear SSP interrupt flag
+            SSPBUF=(Slaveadd+1);//send the slave address and R/W bit
+            while(!SSPIF);//wait for acknowledge.SSPIF bit is set every 9th clock cycle
+            PIR1bits.SSPIF=0;//clear SSP interrupt flag
             if(SSPCON2bits.ACKSTAT){
-                SSPCON2bits.PEN=1;
-                while(PEN);
-                return(0xFF);
+                SSPCON2bits.PEN=1;//initiate stop condition
+                while(PEN);//wait for start condition to complete
+                return(0xFF);//Exit read (no acknowledge)
             }
             
-            SSPCON2bits.RCEN=1;
-            while(!SSPSTATbits.BF);
-            TempData=SSPBUF;
+            SSPCON2bits.RCEN=1;//recieve data byte from slave
+            while(!SSPSTATbits.BF);//wait for the recieve to complete
+            TempData=SSPBUF;//save the data byte
             
-            SSPCON2bits.ACKDT=1;
-            SSPCON2bits.ACKEN=1;
-            while(ACKEN);
-            SSPCON2bits.PEN;
-            while(PEN);
-            return TempData;
+            SSPCON2bits.ACKDT=1;//prepare to send NACK
+            SSPCON2bits.ACKEN=1;//initiate NACK to the EEPROM
+            while(ACKEN);//wait for the NACK to complete
+            SSPCON2bits.PEN;//initiate stop condition
+            while(PEN);//wait for start condition to complete
+            return TempData;//return the data byte value
     }
