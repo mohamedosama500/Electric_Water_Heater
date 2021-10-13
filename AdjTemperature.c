@@ -93,7 +93,7 @@ void temp_Update(void){
                 Temp_Reading();
      }
  
-     ////////////////////////////////
+     /*check if temp. is more than 5 degree of the set temp then cooler will work*/
      
      if (y >= (tmp + 5)) {
 		PORTC |= (1 << 2);
